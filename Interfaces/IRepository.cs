@@ -1,0 +1,14 @@
+using System.Collections.Generic;
+namespace DIOflix.Interfaces
+{
+    public interface IRepository<T>
+    {
+        List<T> Lista();
+        T RetornaPorId(int id);
+        void Insere(T entity);
+        void Exclui(int id);
+        void Atualiza(int id, T entity);
+        int ProximoId();
+         
+    }
+}
